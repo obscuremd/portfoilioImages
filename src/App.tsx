@@ -2,6 +2,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Images } from './Images'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 
 function App() {
@@ -16,8 +17,9 @@ function App() {
       <h1>portfolio gallery</h1>
 
      {/* data */}
+     
       <div>
-        {Images.map(image=><img src={image} className='image' alt="" />)}
+        {Images.map(image=><LazyLoadImage effect='blur' src={image} className='image' alt="pp" />)}
             
       </div>
 
