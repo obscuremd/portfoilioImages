@@ -9,19 +9,19 @@ export default defineConfig({
     ViteImageOptimizer({
       png: {
         // https://sharp.pixelplumbing.com/api-output#png
-        quality: 40,
+        quality: 10,
       },
       jpeg: {
         // https://sharp.pixelplumbing.com/api-output#jpeg
-        quality: 40,
+        quality: 10,
       },
       jpg: {
         // https://sharp.pixelplumbing.com/api-output#jpeg
-        quality: 40,
+        quality: 10,
       },
       tiff: {
         // https://sharp.pixelplumbing.com/api-output#tiff
-        quality: 40,
+        quality: 10,
       },
       // gif does not support lossless compression
       // https://sharp.pixelplumbing.com/api-output#gif
