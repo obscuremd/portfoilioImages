@@ -3,10 +3,10 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Images } from './Images'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 function App() {
-
 
   return (
     <>
@@ -17,9 +17,9 @@ function App() {
       <h1>portfolio gallery</h1>
 
      {/* data */}
-     
+    
       <div>
-        {Images.map(image=><LazyLoadImage effect='blur' src={image} className='image' alt="pp" />)}
+        {Images.map(image=><LazyLoadImage key={image} loading='lazy' effect='blur' src={image} className='image' alt="pp" />)}
             
       </div>
 
